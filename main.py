@@ -45,6 +45,10 @@ def check_all_messages(message):
     response('I am baby_soft, creation of neo and tshepang', ['who', 'are', 'you'], required_words=['who'])
     response('I am 4 years old, today is my birthday', ['how', 'old', 'are','you'], required_words=['old'])
     response('I live in the digital world', ['where', 'do', 'live','you'], required_words=['where','live'])
+    response('tshepang!!!!!', ['favourite', 'person', 'in','world'], required_words=['favourite'])
+    response('Cause she has no sense of humor', ['why'], required_words=['why'])
+    response('Tech Billionair, Business mogul and on of the greates minds of our time. He is my father', ['who', 'is', 'neo'], required_words=['neo'])
+    response('Fashionable, influential, money making machine', ['who', 'is', 'tshepang'], required_words=['tshepang'])
 
 
     # Longer responses
