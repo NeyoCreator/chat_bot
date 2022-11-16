@@ -5,11 +5,15 @@ def message_probability(user_message,recognised_words,single_response=False, req
     message_certantity = 0
     has_required_words = True
 
+    # COUNTS HOW MANY WORDS ARE PRESENT IN EACH PREDEFINED MESSAGE
     for word in user_message:
         if word in recognised_words:
             message_certantity += 1
 
+    #CALCULATE THE PERCENTAGE OF RECOGNISED WORDS IN A USER MESSAGE 
     percentage = float(message_certantity)/ float(len(recognised_words))
+
+
 
 #CREATE FUNCTION
 def get_response(user_input):
