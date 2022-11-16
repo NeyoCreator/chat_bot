@@ -33,6 +33,17 @@ def check_all_messages(message):
         high_prob_list[bot_response]=message_probability(message, list_of_words, single_response,required_words)
 
 
+    #Responses -------------------------------------------------------------------------------------------------
+    response('Hello',['hello', 'hi','sup', 'hey','heyo'], single_response=True)
+    response('I\' doing fine and you ', ['how', 'are', 'you','doing'], required_words=['how'])
+    response('Thank you',['i','love','code','palace'], required_words=['code','palace'])
+
+    best_match = max(high_prob_list, key=high_prob_list.get())
+    print(high_prob_list)
+
+    return best_match
+
+
 
 
 
