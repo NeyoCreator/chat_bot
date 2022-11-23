@@ -1,0 +1,7 @@
+tried to attach the chat bot to google seraches 
+but it turn our that the functionality is limited.
+I will try to improve the bot with more code
+=================================================
+Looking at the at the architecture of this i will 
+try to create the back end of the application 
+with flask and the fronte end with react.js
