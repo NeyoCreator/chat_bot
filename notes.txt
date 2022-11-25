@@ -5,3 +5,10 @@ I will try to improve the bot with more code
 Looking at the at the architecture of this i will 
 try to create the back end of the application 
 with flask and the fronte end with react.js
+=================================================
+created flaks application that sends data to the front 
+end of react.what i will try to do is break the application 
+into smaller components. that will be scripts 
+1.Chatapp script.
+2.Power system calculation script.
+3.API scritp.
