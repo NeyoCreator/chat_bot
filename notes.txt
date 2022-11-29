@@ -12,3 +12,28 @@ into smaller components. that will be scripts
 1.Chatapp script.
 2.Power system calculation script.
 3.API scritp.
+
+tried to attach the chat bot to google seraches 
+but it turn our that the functionality is limited.
+I will try to improve the bot with more code, but as I 
+think about it i can make it much simplre, i can make it 
+much simpler and accomadate to the need that one requires .
+
+Simple interaction that gives you inforomation about your 
+house holds power.
+============================================================
+I have been stuck on which tech stack to use.
+
+If i look at both languages I need to consider what advantages and 
+disadavatages they have.
+when i look at javascript, it will allow me to create A progressive 
+web app, in its benefits will allow me to access certain things 
+with regards to the phone. for example GPS location. Blutooth 
+enalling.
+
+What I can do is start by creating scripts that i can turn into modules
+
+VERSION 1 : this will be basic analysis, it will display basic information 
+about the system.
+
+1.API script.
