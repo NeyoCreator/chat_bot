@@ -39,3 +39,8 @@ about the system.
 1.API script.
 ===========================================================================
 Trying to implement the eskom API but having problems with using typescrript.
+Managed to find a different API call.
+Manged to use eskom PUSH API.
+I won'tbe able to utilise the geo-location data.
+what i WILL have to do is ask the user for the location.
+Recpsnidering using eksom push

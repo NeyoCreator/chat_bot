@@ -1,8 +1,4 @@
-import { Search, Province, Municipality } from 'eskom-loadshedding-api';
+console.log("starting");
+window.navigator.geolocation.getCurrentPosition(console.log)
 
-Search.getMunicipalities(Province.WESTERN_CAPE).then((municipalities) =>
-    console.log(
-        'Western Cape municipalities:',
-        municipalities((el) => el.name)
-    )
-);
+
