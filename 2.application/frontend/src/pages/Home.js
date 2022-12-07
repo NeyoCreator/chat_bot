@@ -20,12 +20,7 @@ const Home = () => {
 
     return (
       <div className="home">
-        <div className="workouts" >
-          {workouts && workouts.map((workout) => (
-            <p key={workout._id}>{workout.title}</p>
-          ))}
-
-        </div>
+        <h2>we are looking</h2>
       </div>
     )
   }
