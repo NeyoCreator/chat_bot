@@ -1,18 +1,25 @@
-import logo from './logo.svg';
-import BasicCard from './card';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import BasicCard from './components/card1';
+import BasicCard2 from './components/card2';
+import Navbar from './components/Navbar';
+import Home from './components/Home'
 import './App.css';
 
-
 function App() {
+
   return (
     <div className="App">
-      <h1>Battery Status:40%</h1>
-      <br></br>
-      <h1>Next Schedule: 20:30</h1>
-
-      <center><BasicCard></BasicCard></center> 
-
-
+      <BrowserRouter>
+        <Navbar />
+        <div className="pages">
+          <Routes>
+            <Route 
+              path="/" 
+              element={<Home />} 
+            />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
