@@ -44,3 +44,8 @@ Manged to use eskom PUSH API.
 I won'tbe able to utilise the geo-location data.
 what i WILL have to do is ask the user for the location.
 Recpsnidering using eksom push
+============================================================================
+2.Firebase SDK
+Managed to play arounf with some of the firebase tools.
+The one I am going to utilise is the Hosting 
+my next approach is to clean everthing and start with a clean repo
