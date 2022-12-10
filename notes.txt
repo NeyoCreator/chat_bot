@@ -56,3 +56,7 @@ Added Navbar and card components
 ============================================================================
 4.API CALLS
 trying to create a script thta will make API call
+#NOt going to use the typescript API library msotly due to the fact that i don't
+understand typescript.My focus will be on working on dummy data so i can prove
+the concept. 
+#Going to create a scipt that will get me the latest schedule.
