@@ -49,3 +49,10 @@ Recpsnidering using eskom push
 Managed to play arounf with some of the firebase tools.
 The one I am going to utilise is the Hosting 
 my next approach is to clean everthing and start with a clean repo
+============================================================================
+3.UI DESIGN
+managed to create a better design for the application.
+Added Navbar and card components
+============================================================================
+4.API CALLS
+trying to create a script thta will make API call
