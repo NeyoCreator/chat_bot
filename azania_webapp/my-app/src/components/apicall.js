@@ -13,13 +13,9 @@ function FavoriteColor() {
     )
   },[])
 
-  console.log(getData)
-
-
   return(
-    // <div>
-    
-  <h1>loading {getData.name}</h1>
+  <h1>Day : {getData.name} & Schedule :{getData.schedule}</h1>
+
    )
 }
 

@@ -64,4 +64,6 @@ using the axion librarysince the fecth is giving me propblems.
 turns out I can't make the eskom push request from the fronend since it contains
 sensetive infromation about my request. what I will try to do is implement is make 
 the request through the server by using the backend. through express routing.
+#Manged to transfer data from backend to frontend,what i am going to focus is structuring it 
+and imrporovoing the UI
 ===========================================================================
