@@ -1,27 +1,26 @@
 import { useEffect, useState } from "react";
-import Axios from "axios"
+
 
 function FavoriteColor() {
-  const [getData, setData] = useState(null)
+  const [getData, setData] = useState([{}])
 
-
-  useEffect(() => {
-    const fetchData = async ()=>{
-
-      const response = await fetch('http://localhost:4000/api/workouts')
-      const json = await response.json()
+  useEffect(() =>{
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data =>setData(data)
       
-      if (response.ok){
-        setData(json)
-
-      }
-    }
-    fetchData()
+    )
   },[])
 
+  console.log(getData)
+
+
   return(
-    <h1>yESS</h1>
-  )
+    // <div>
+    
+  <h1>loading {getData.name}</h1>
+   )
 }
 
 
