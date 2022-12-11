@@ -59,4 +59,9 @@ trying to create a script thta will make API call
 #NOt going to use the typescript API library msotly due to the fact that i don't
 understand typescript.My focus will be on working on dummy data so i can prove
 the concept. 
-#Going to create a scipt that will get me the latest schedule.
+#Going to create a srcipt that will get me the latest schedule.
+using the axion librarysince the fecth is giving me propblems.
+turns out I can't make the eskom push request from the fronend since it contains
+sensetive infromation about my request. what I will try to do is implement is make 
+the request through the server by using the backend. through express routing.
+===========================================================================
