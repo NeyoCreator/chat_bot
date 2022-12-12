@@ -67,3 +67,9 @@ the request through the server by using the backend. through express routing.
 #Manged to transfer data from backend to frontend,what i am going to focus is structuring it 
 and imrporovoing the UI
 ===========================================================================
+5.Dynamic coding
+I created the application to maksu sure that I can make API calls from react 
+From now what I will try to do is divide the application into 3 steps.
+1.location
+2.device connction
+3.Home page
