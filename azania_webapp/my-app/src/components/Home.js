@@ -4,11 +4,14 @@
 // import MyComponent from "./apicall"
 // import FavoriteColor from "./apicall"
 import LocationForm from "./Form"
+import ConnectDevice from "./Device"
+import BatterStatus from "./BatteryCard"
+import ScheduleData from "./LoadShedding"
 
 const Home = () => {
     return (
       <div className="Home">
-        <LocationForm></LocationForm>
+        
         {/* <h1>hello {x}</h1> */}
         <br></br>
         {/* HOME CALL */}
@@ -18,7 +21,16 @@ const Home = () => {
         <br></br>
         <FavoriteColor></FavoriteColor> */}
 
-        {/* LOCATION FORM */}
+        {/* 1.LOCATION FORM */}
+        {/* <LocationForm></LocationForm> */}
+
+        {/* 2.DEVICE */}
+        {/* <ConnectDevice></ConnectDevice> */}
+
+        {/* 3.DISPLAY */}
+        <BatterStatus></BatterStatus>
+        <br></br>
+        <ScheduleData></ScheduleData>
         
         
       </div>
