@@ -5,12 +5,13 @@ import Navbar from './components/Navbar';
 import Home from './components/Home'
 import LocationForm from './components/Form';
 import ConnectDevice from './components/Device';
+import HomePage from './authentication/homepage'
+import SignIn from './authentication/SignIn'
 import './App.css';
 
 
 
 function App() {
-  
   return (
     <div className="App">
       <BrowserRouter>
@@ -19,7 +20,8 @@ function App() {
           <Routes>
             <Route 
               path="/" 
-              element={<LocationForm />} 
+              // element={<LocationForm />} 
+              element={<SignIn/>}
             />
           </Routes>
           
