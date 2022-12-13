@@ -38,4 +38,10 @@ app.get("/api", (req, res) => {
         .catch(error => console.log('error', error));
 })
 
+app.get("/location", (req, res) => {
+    res.json({ "Location": ["Mamelodi East"] })
+    console.log("activated")
+})
+
+
 app.listen(5000, () => { console.log("Server started on port 5000") })
