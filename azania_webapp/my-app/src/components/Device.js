@@ -1,8 +1,22 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "bootstrap/dist/css/bootstrap.min.css"
+import { useEffect, useState } from "react";
+
 
 function ConnectDevice() {
+
+  //1.GET API DATA
+  const [getData, setData] = useState([{}])
+  useEffect(() =>{
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data =>setData(data)
+      
+    )
+  },[])
+
   return (
     <Card>
       <Card.Header>Connect Device</Card.Header>

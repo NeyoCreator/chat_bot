@@ -1,6 +1,20 @@
 import Card from 'react-bootstrap/Card';
+import { useEffect, useState } from "react";
+
 
 function ScheduleData() {
+  //1.GET API DATA
+  const [getData, setData] = useState([{}])
+
+  useEffect(() =>{
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data =>setData(data)
+      
+    )
+  },[])
+
   return (
     <Card>
       <Card.Header>Location : Marshalltown</Card.Header>
@@ -8,10 +22,10 @@ function ScheduleData() {
         <blockquote className="blockquote mb-0">
           <p>
             {' '}
-            The next schdule will be at{' '}
+            Date : {getData.name} {' '}
           </p>
           <footer className="blockquote-footer">
-            21:30 <cite title="Source Title"> Please charge your device</cite>
+            Next Schedules <cite title="Source Title">{getData.schedule}</cite>
           </footer>
         </blockquote>
       </Card.Body>
