@@ -11,7 +11,7 @@ function ConnectDevice() {
         <Card.Text>
           your package device with the smartphone, allow bluetooth acces to this device.
         </Card.Text>
-        <Button variant="primary">Connect</Button>
+        <Button onClick={event =>  window.location.href='/home'} variant="primary">Connect</Button>
       </Card.Body>
     </Card>
   );

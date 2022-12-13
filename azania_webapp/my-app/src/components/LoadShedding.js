@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 function ScheduleData() {
   return (
     <Card>
-      <Card.Header>Marshall Town</Card.Header>
+      <Card.Header>Location : Marshalltown</Card.Header>
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p>

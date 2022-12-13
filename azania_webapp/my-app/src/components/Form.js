@@ -12,9 +12,11 @@ function LocationForm() {
       </Form.Group>
 
      
-      <Button variant="primary" type="submit">
+      <Button onClick={event =>  window.location.href='/device'} variant="primary" type="submit">
         Submit
       </Button>
+      {/* <Link to="/device" className="btn btn-primary">Sign up</Link> */}
+      
     </Form>
   );
 }

@@ -3,6 +3,8 @@ import BasicCard from './components/card1';
 import BasicCard2 from './components/card2';
 import Navbar from './components/Navbar';
 import Home from './components/Home'
+import LocationForm from './components/Form';
+import ConnectDevice from './components/Device';
 import './App.css';
 
 
@@ -17,6 +19,20 @@ function App() {
           <Routes>
             <Route 
               path="/" 
+              element={<LocationForm />} 
+            />
+          </Routes>
+          
+          <Routes>
+            <Route 
+              path="/device" 
+              element={<ConnectDevice />} 
+            />
+          </Routes>
+
+          <Routes>
+            <Route 
+              path="/home" 
               element={<Home />} 
             />
           </Routes>
