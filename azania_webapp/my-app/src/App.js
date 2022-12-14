@@ -20,8 +20,8 @@ function App() {
           <Routes>
             <Route 
               path="/" 
-              // element={<LocationForm />} 
-              element={<SignIn/>}
+              element={<LocationForm />} 
+              // element={<SignIn/>}
             />
           </Routes>
           
