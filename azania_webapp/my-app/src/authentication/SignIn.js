@@ -4,7 +4,6 @@ import React,{useEffect, useState} from "react"
 import HomePage from './homepage'
 import Home from '../components/Home'
 
-
 function SignIn(){
     const [value,setValue] = useState('')
     const handleclick =() =>{
@@ -20,9 +19,13 @@ function SignIn(){
 
     return(
         <div>
-            {value?<Home />: 
-            <button onClick = {handleclick}>SignIn with Google</ button>
 
+            {value?<Home />: 
+            <div>
+                <h1>Here at azania our mission is to reach sustainability</h1>
+                <br></br>
+            <button onClick = {handleclick} type="button" class="btn btn-dark">SignIn with Google</button>
+            </div>
             }
         </div>
     )
