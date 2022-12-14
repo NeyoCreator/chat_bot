@@ -64,3 +64,5 @@ var schedule = result["schedule"]["days"][0]
 const day = schedule["name"]
 schedule = schedule["stages"][thenumInt]
 console.log(JSON.stringify({stage}))
+=====================================================
+CHANGING DIRECTORY
