@@ -1,50 +1,38 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "bootstrap/dist/css/bootstrap.min.css"
-// import { getDatabase } from "firebase/database";
-import { getDatabase, ref, set } from "firebase/database";
+
+import { db } from '../authentication/config';
+import { getFirestore, collection, query, where, getDocs, doc, setDoc,addDoc } from "firebase/firestore";
 
 
 
 
 function LocationForm() {
-  const database = getDatabase();
+  // const database = getDatabase();
+  const writeData = async (e) => {
 
-  function writeUserData(userId, name, email) {
-    const db = getDatabase();
-    set(ref(db, 'users/' + userId), {
-      username: "name",
-      email: "email"
-      
-    });
+    console.log(JSON.stringify(collection("energy_data")))
+
   }
-  
-
-
-  const handleclick =() =>{
-      const userLOcation = document.getElementById("userLocation").value
-      console.log('Data has bee writtem')
-      writeUserData()
-      // window.location.href='/device'
-    }
 
 
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>What is your location?</Form.Label>
-        <Form.Control id="userLocation"type="email" placeholder="Enter location" />
+        <Form.Control id="userLocation" type="email" placeholder="Enter location" />
       </Form.Group>
 
-     
-      <Button onClick={handleclick} variant="primary" type="submit">
+
+      <Button onClick={writeData} variant="primary" type="submit">
         Submit
       </Button>
       {/* <Button onClick={event =>  window.location.href='/device'} variant="primary" type="submit">
         Submit
       </Button> */}
       {/* <Link to="/device" className="btn btn-primary">Sign up</Link> */}
-      
+
     </Form>
   );
 }

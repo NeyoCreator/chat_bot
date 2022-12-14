@@ -1,9 +1,11 @@
 Automation commands
-1.FRONTEND
-cd chat_bot && cd azania_webapp && cd my-app && npm start
 
 2.BACKEND
 cd chat_bot && cd azania_webapp && cd backend && npm run dev
+
+1.FRONTEND
+cd chat_bot && cd azania_webapp && cd my-app && npm start
+
 =================================================
 tried to attach the chat bot to google seraches 
 but it turn our that the functionality is limited.
