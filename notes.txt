@@ -1,9 +1,9 @@
 Automation commands
 
-2.BACKEND
+1.BACKEND
 cd chat_bot && cd azania_webapp && cd backend && npm run dev
 
-1.FRONTEND
+2.FRONTEND
 cd chat_bot && cd azania_webapp && cd my-app && npm start
 
 =================================================
@@ -82,3 +82,22 @@ From now what I will try to do is divide the application into 3 steps.
 1.location
 2.device connction
 3.Home page
+============================================================================
+FIREBASE DATA CODE 
+
+READING DATA
+firebase.initializeApp(firebaseConfig);
+  const writeData = async (e) => {
+    const db = firebase.firestore();
+    const docRef = doc(db, "cities", "SF");
+    const docSnap = await getDoc(docRef);
+
+  
+    if (docSnap.exists()) {
+      console.log("Document data:", docSnap.data());
+    } else {
+      // doc.data() will be undefined in this case
+      console.log("No such document!");
+    }
+
+  }

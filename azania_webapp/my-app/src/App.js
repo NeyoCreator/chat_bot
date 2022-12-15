@@ -19,25 +19,25 @@ function App() {
         <div className="pages">
           <Routes>
             <Route 
-              path="/" 
+              path="/location" 
               element={<LocationForm />} 
               // element={<SignIn/>}
             />
           </Routes>
           
-          <Routes>
+          {/* <Routes>
             <Route 
               path="/device" 
               element={<ConnectDevice />} 
             />
-          </Routes>
+          </Routes> */}
 
-          <Routes>
+          {/* <Routes>
             <Route 
               path="/home" 
               element={<Home />} 
             />
-          </Routes>
+          </Routes> */}
         </div>
       </BrowserRouter>
     </div>
