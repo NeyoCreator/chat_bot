@@ -8,7 +8,7 @@ import firebaseConfig from "../authentication/config"
 import { getFirestore, getDoc, collection, query, where, getDocs, doc, setDoc, addDoc } from "firebase/firestore";
 import "firebase/compat/firestore"
 import firebase from "firebase/compat/app";
-
+import {auth} from "../authentication/config"
 
 
 function LocationForm() {
@@ -25,28 +25,34 @@ function LocationForm() {
   firebase.initializeApp(firebaseConfig);
   const writeData = async (e) => {
     const db = firebase.firestore();
-    // const docRef = doc(db, "cities", "SF");
+    //1.GET USER ID
+    const user = auth.currentUser;
+    const userID=user.uid
+    const userName = user["displayName"]
 
-    const citiesRef = collection(db, "cities");
-  
-    await setDoc(doc(citiesRef, "LA"), {
-      name: "Los Angeles", state: "CA", country: "USA",
-      capital: false, population: 3900000,
-      regions: ["west_coast", "socal"] });
+    //2.GET LOCATION
+    const user_location = document.getElementById("inputLocation").value
 
+    const userDataRef = collection(db, "user_data");
+    await setDoc(doc(userDataRef, userID), {
+      user: userName,
+      location: user_location,
+      batter_status: 66
+    });
+    console.log("========Datbase Updated==========")
   }
+
+
 
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>What is your location?</Form.Label>
+        <Form.Control type="text" placeholder="Enter location" id="inputLocation"/>
       </Form.Group>
 
-      {/* <Button onClick={alert("hj")} variant="primary" type="submit">
-        Submit
-      </Button> */}
-
-      <Button onClick={writeData}>Hello</Button>
+      <Button onClick={writeData}>Write Data</Button>
+      <br></br>
 
     </Form>
   );
