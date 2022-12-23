@@ -13,33 +13,16 @@ async function display(){
       const api = new openai.OpenAIApi(configuration);
       const response = await api.createCompletion({
         model: "text-davinci-003",
-        prompt: "Say this is a test",
+        prompt: "What is the capital Of France?",
         max_tokens: 7,
         temperature: 0,
       });
-      console.log(response)
+      return response.data.choices
 }
 
-// app.get('/api', (req, res) => {
-//     openai.api.assistant({
-//       prompt: 'Hello, how can I help you today?',
-//       model: 'text-davinci-002',
-//       api_key: process.env.OPENAI_API_KEY,
-//     }, (error, response) => {
-//       if (error) {
-//         console.error(error);
-//         return;
-//       }
-  
-//       res.send(response.data.response);
-//     });
-//   });
-
-
-
-app.get('/', (req, res) => {
-    display()
-    res.json({"name":"mkal", "schedule":"please"})
+app.get('/', async (req, res) => {
+  const choices = await display();
+  res.json(choices);
 });
 
 app.listen(2000, () => { console.log("Server started on porst 2000") })
