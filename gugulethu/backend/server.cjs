@@ -25,6 +25,5 @@ app.get('/', async (req, res) => {
   res.json(choices);
 });
 
-app.listen(2000, () => { console.log("Server started on porst 2000") })
-
+app.listen(2000, () => { console.log("Server started on post 2000") })
 process.env
