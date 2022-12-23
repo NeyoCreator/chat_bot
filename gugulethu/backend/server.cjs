@@ -11,24 +11,29 @@ async function display(){
         apiKey: process.env.OPENAI_API_KEY,
       });
       const api = new openai.OpenAIApi(configuration);
-      const response = await api.listEngines();
+      const response = await api.createCompletion({
+        model: "text-davinci-003",
+        prompt: "Say this is a test",
+        max_tokens: 7,
+        temperature: 0,
+      });
       console.log(response)
 }
 
-app.get('/api', (req, res) => {
-    openai.api.assistant({
-      prompt: 'Hello, how can I help you today?',
-      model: 'text-davinci-002',
-      api_key: process.env.OPENAI_API_KEY,
-    }, (error, response) => {
-      if (error) {
-        console.error(error);
-        return;
-      }
+// app.get('/api', (req, res) => {
+//     openai.api.assistant({
+//       prompt: 'Hello, how can I help you today?',
+//       model: 'text-davinci-002',
+//       api_key: process.env.OPENAI_API_KEY,
+//     }, (error, response) => {
+//       if (error) {
+//         console.error(error);
+//         return;
+//       }
   
-      res.send(response.data.response);
-    });
-  });
+//       res.send(response.data.response);
+//     });
+//   });
 
 
 
