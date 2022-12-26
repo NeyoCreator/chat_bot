@@ -5,12 +5,31 @@ function MyButton() {
   const [response, setResponse] = useState(null);
 
   async function handleClick() {
-    const res = await fetch('http://localhost:2000/api');
-    const data = await res.json();
-    setResponse(data);
-    // console.log(data)
-    
-    console.log(data)
+
+    //1.GET USER DATA
+    console.log("Getting Data")
+    const userVoiceData = document.getElementById("userVoice").innerHTML
+    console.log("Input : "+ userVoiceData)
+
+    //SEND DATA TO BACKEND
+    const zaka = await  fetch('http://localhost:2000/api/data', {
+        method: 'POST',
+        body: JSON.stringify({ data: userVoiceData}),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(response => response.json())
+        .then(data => {
+            //IF POST WAS SUCCESSFULL 
+            console.log(JSON.stringify(data))
+        })
+        .catch(error => {
+        });
+        
+    console.log("Call made successfully....")
+      
+      
   }
 
   return (
