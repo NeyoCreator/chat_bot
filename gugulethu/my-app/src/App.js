@@ -3,6 +3,7 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import axios from 'axios';
 // import fetch from 'node-fetch'
 import { fetch } from 'whatwg-fetch';
+import MyButton from './Components/apiButton';
 
 
 const Dictaphone = () => {
@@ -17,9 +18,20 @@ const Dictaphone = () => {
     return <span>Browser doesn't support speech recognition.</span>;
   }
 
-  function getUserData(){
+   function sendUserData(){
+    console.log("Help")
+    // console.log("CALLING API======")
+    // const res = await fetch('http://localhost:2000/api');
+    // console.log(JSON.stringify(res))
+  
+  
+    // const data = await res.json();
+  // console.log(JSON.stringify(data))
+    
+      //REST USER DATA 
+    // document.getElementById("userVoice").innerHTML = ""
+    // document.getElementById("chatBot").innerHTML = "New text!";
 
-    document.getElementById("chatBot").innerHTML = "New text!";
 
     // let data = {
     //   voice_message :document.getElementById('userVoice')[0].innerHTML
@@ -43,24 +55,25 @@ const Dictaphone = () => {
     //     console.error(error);
     //   });
   }
+
+  function startButton(){
+    console.log("we are starting")
+    SpeechRecognition.startListening();
+
+  }
   
   return (
     <div>
       <center>
       <h1>You :</h1>
       <p id = "userVoice">{transcript}</p>
-      {/* <p>Microphone: {listening ? 'on' : 'off'}</p> */}
-      <button onClick={SpeechRecognition.startListening}>Start</button>
-      {/* <button onClick={SpeechRecognition.stopListening}>Send</button> */}
-      <button onClick={getUserData}>Send</button>
-      {/* <button onClick={resetTranscript}>Reset</button> */}
-      
-
+      <button onClick={startButton}>Start</button>
+      <button onClick={sendUserData}>Send</button>      
       <h1>Gugu :</h1>
       <p id = "chatBot"></p>
-      </center>
 
-      
+      <MyButton></MyButton>
+      </center>
     </div>
   );
 };
