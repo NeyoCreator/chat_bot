@@ -31,7 +31,6 @@ function MyButton() {
         
     console.log("Call made successfully....")
       
-      
   }
 
   return (

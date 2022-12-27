@@ -34,8 +34,6 @@ const Dictaphone = () => {
       <Button variant='light' size='lg'  style={{margin: '10px ',fontFamily: 'Ubuntu, sans-serif'}} onClick={startButton}>Start</Button>
       <MyButton></MyButton>  
       <h2 style={{fontFamily: 'Ubuntu, sans-serif',color :"#0A9B0B"}}  id = "chatBot"></h2>
-      
-      
 
       </center>
     </div>
