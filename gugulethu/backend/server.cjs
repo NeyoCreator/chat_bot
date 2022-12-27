@@ -19,26 +19,27 @@ async function processData(input){
       const response = await api.createCompletion({
         model: "text-davinci-003",
         prompt: input,
-        max_tokens: 50,
+        max_tokens: 400,
         temperature: 1,
       });
       return response.data.choices
 }
 
 app.get('/', async (req, res) => {
-  // const choices = await display();
-  // res.json(choices);
 });
 
 
 //SEND DATA TO FRONTEND
 app.post('/api/data',async(req, res) => {
   const data = req.body;
-  console.log(data);
   const choices = await processData(req.body["data"])
 
+  //CLEAN DATA 
+  let  cleanedData = choices[0].text.trim()
+
+  
   //SEND DATA BACK TO FRONT END
-  res.send({ success: choices[0].text });
+  res.send({ success: cleanedData });
 
 });
 
