@@ -25,9 +25,11 @@ const Dictaphone = () => {
   }
   
   return (
-    <div>
+    <div style={{
+      position: 'absolute', left: '50%', top: '50%',
+      transform: 'translate(-50%, -50%)'
+  }}>
       <center>
-
       <h2 style={{ fontFamily: 'Ubuntu, sans-serif', color:'#888282' }} id = "userVoice">{transcript}</h2>
       <Button variant='light' size='lg'  style={{margin: '10px ',fontFamily: 'Ubuntu, sans-serif'}} onClick={startButton}>Start</Button>
       <MyButton></MyButton>  
