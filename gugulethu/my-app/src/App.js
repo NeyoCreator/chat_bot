@@ -65,14 +65,14 @@ const Dictaphone = () => {
   return (
     <div>
       <center>
-      <h1>You :</h1>
       <p id = "userVoice">{transcript}</p>
-      <button onClick={startButton}>Start</button>
-      <button onClick={sendUserData}>Send</button>      
-      <h1>Gugu :</h1>
-      <p id = "chatBot"></p>
+      <button style={{margin: '10px 0'}} onClick={startButton}>Start</button>
+      
+      <MyButton></MyButton>  
 
-      <MyButton></MyButton>
+      
+      <p id = "chatBot"></p>
+     
       </center>
     </div>
   );

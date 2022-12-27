@@ -23,6 +23,7 @@ function MyButton() {
         .then(data => {
             //IF POST WAS SUCCESSFULL 
             console.log(JSON.stringify(data))
+            document.getElementById("chatBot").innerHTML = JSON.stringify(data['success']);
         })
         .catch(error => {
         });
@@ -34,7 +35,7 @@ function MyButton() {
 
   return (
     <button onClick={handleClick}>
-      Click me to call the API!
+      Send
     </button>
   );
 }
