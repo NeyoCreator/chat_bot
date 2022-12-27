@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 // import { json } from 'stream/consumers';
 
 function MyButton() {
@@ -34,9 +35,9 @@ function MyButton() {
   }
 
   return (
-    <button onClick={handleClick}>
+    <Button variant="dark" size = "lg" style={{fontFamily: 'Ubuntu, sans-serif'}} onClick={handleClick}>
       Send
-    </button>
+    </Button>
   );
 }
 
