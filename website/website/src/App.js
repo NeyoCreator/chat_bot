@@ -1,40 +1,25 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  // Switch,
-  // Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomePage from './components/home';
+import './App.css';
 
-function Home() {
-  return (
-    <div>
-      <h1>What do we do ?</h1>
-      <h1>Why do we do it ?</h1>
-      <p></p>
-      <button>Get product</button>
-      {/* <Link to="/price">
-        <button>Go to Price page</button>
-      </Link> */}
 
-      
-    </div>
-  );
-}
-
-function Price() {
-  return (
-    <div>
-      <img src="path/to/image.jpg" alt="Price" />
-      <h1>Price</h1>
-    </div>
-  );
-}
 
 function App() {
   return (
-    <Home></Home>
-
+    <div className="App">
+      <BrowserRouter>
+        
+        <div className="pages">
+          <Routes>
+            <Route 
+              path="/home" 
+              element={<HomePage />} 
+            />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
   );
 }
 
