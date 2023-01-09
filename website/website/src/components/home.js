@@ -1,5 +1,9 @@
 
 
+function callNextPage(){
+    window.location.href="price"
+}
+
 const HomePage = () => {
     return(
 
@@ -10,8 +14,7 @@ const HomePage = () => {
         <h1>what do we do?</h1>
         <br></br>
 
-        <button>Continue</button>
-
+        <button onClick={callNextPage}>Continue</button>
         </div>
     )
 }
