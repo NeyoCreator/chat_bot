@@ -1,9 +1,7 @@
 
-
 function callNextPage(){
     window.location.href="price"
 }
-
 const HomePage = () => {
     return(
 
@@ -18,5 +16,4 @@ const HomePage = () => {
         </div>
     )
 }
-
 export default HomePage;

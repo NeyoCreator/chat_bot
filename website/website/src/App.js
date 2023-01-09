@@ -4,8 +4,6 @@ import HomePage from './components/home';
 import Pricepage from './components/Price';
 import './App.css';
 
-
-
 function App() {
   return (
     <div className="App">
@@ -19,9 +17,6 @@ function App() {
               element={<HomePage />} 
             />
           </Routes>
-
-
-          
           <Routes>
             <Route 
               path="/price" 
