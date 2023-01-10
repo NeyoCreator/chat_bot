@@ -80,3 +80,15 @@ From now what I will try to do is divide the application into 3 steps.
 1.location
 2.device connction
 3.Home page
+===========================================================================
+6.Payment Updates
+i initially wanted to integrate the application with stripe, but its not available
+in Africa my other option was to use yoco. I will look into their API documentaion.
+What i will be focusing on will.
+
+
+
+
+
+
+
