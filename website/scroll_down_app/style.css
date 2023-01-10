@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity :0 ;
+    transition: all 1s;
+
+}
+
+.show{
+
+    opacity: 1;
+}

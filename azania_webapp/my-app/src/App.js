@@ -10,7 +10,6 @@ import SignIn from './authentication/SignIn'
 import './App.css';
 
 
-
 function App() {
   return (
     <div className="App">
