@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const BatteryCard = () => {
+const LoadSheddingCard = () => {
     return (
         <View style={styles.cardContainer}>
             <View style={styles.card}>
-                <Text style={styles.title}>92% Battery storage</Text>
+                <Text style={styles.title}>21:30</Text>
             </View>
         </View>
     );
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default BatteryCard;
+export default LoadSheddingCard;

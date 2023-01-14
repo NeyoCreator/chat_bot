@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const BatteryTitle = () => {
+const LoadSheddingTittle = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Battery storage</Text>
+            <Text style={styles.text}>Load Shedding schedule</Text>
         </View>
     );
 };
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
     
 });
 
-export default BatteryTitle;
+export default LoadSheddingTittle;
