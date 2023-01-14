@@ -4,8 +4,6 @@ import LoadSheddingTittle from './titles/loadsheddingtitle';
 import BatteryCard from './cards/batterycard';
 import LoadSheddingCard from './cards/loadsheddingcard';
 
-
-
 const HomePageDisplay = () => {
     return (
         <View>
