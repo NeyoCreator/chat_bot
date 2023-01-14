@@ -85,6 +85,11 @@ From now what I will try to do is divide the application into 3 steps.
 i initially wanted to integrate the application with stripe, but its not available
 in Africa my other option was to use yoco. I will look into their API documentaion.
 What i will be focusing on will.
+===========================================================================
+7.MObile application
+my focus now is to look into creating a mobile application.
+The reason as to why I am looking at this is because i want to access
+certain component of the device, LIke bluetooth and wifi
 
 
 
