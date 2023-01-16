@@ -8,17 +8,11 @@ const HomePageDisplay = () => {
     return (
         <View>
             {/* 1.BATTERY INFORMATION */}
-            <br></br>
             <BatteryTitle />
-            <br></br>
             <BatteryCard />
-
-            <br></br>
-            <br></br>
 
             {/* 2.LOADSHEDDING DATA */}
             <LoadSheddingTittle />
-            <br></br>
             <LoadSheddingCard />
         </View>
 

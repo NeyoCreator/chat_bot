@@ -11,7 +11,8 @@ const DeviceTitle = () => {
 
 const styles = StyleSheet.create({
     container: {
-        paddingLeft: 30
+        padding: 30
+
     },
     text: {
         fontSize: 30
