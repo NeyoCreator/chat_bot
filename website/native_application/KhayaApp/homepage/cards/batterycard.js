@@ -14,7 +14,8 @@ const BatteryCard = () => {
 const styles = StyleSheet.create({
     cardContainer: {
         paddingLeft: 30,
-        paddingRight:30
+        paddingRight:30,
+        paddingBottom:30
     },
     card: {
         backgroundColor: 'white',

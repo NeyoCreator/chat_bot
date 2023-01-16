@@ -14,7 +14,7 @@ const LoadSheddingCard = () => {
 const styles = StyleSheet.create({
     cardContainer: {
         paddingLeft: 30,
-        paddingRight:30
+        paddingRight:30,
     },
     card: {
         backgroundColor: 'white',

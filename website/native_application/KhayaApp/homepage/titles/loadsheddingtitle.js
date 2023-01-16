@@ -11,7 +11,8 @@ const LoadSheddingTittle = () => {
 
 const styles = StyleSheet.create({
     container: {
-        paddingLeft: 30
+        paddingLeft: 30,
+        paddingBottom:30
     },
     text: {
         fontSize: 30

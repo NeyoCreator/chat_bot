@@ -11,8 +11,10 @@ const BatteryTitle = () => {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 10,
-        paddingvertical:20
+        paddingTop:40,
+        paddingBottom:15,
+        paddingLeft: 30
+        
     },
     text: {
         fontSize: 30
