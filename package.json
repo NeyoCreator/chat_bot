@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "ts-node-dev --respawn src/Union.ts",
     "serve": "ts-node-dev src/function.ts",
-    "build": "tsc"
+    "build": "azania_webapp/azania_webapp/backend/server.js"
   },
   "repository": {
     "type": "git",
