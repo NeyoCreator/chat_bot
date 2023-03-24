@@ -6,7 +6,8 @@ import Home from './components/Home'
 import LocationForm from './components/Form';
 import ConnectDevice from './components/Device';
 import HomePage from './authentication/homepage'
-import SignIn from './authentication/SignIn'
+import SignIn from './authentication/SignIn';
+import ToolKits from './components/toolkits';
 import './App.css';
 
 
@@ -34,10 +35,11 @@ function App() {
 
           <Routes>
             <Route 
-              path="/home" 
-              element={<Home />} 
+              path="/toolkits" 
+              element={<ToolKits />} 
             />
           </Routes>
+
         </div>
       </BrowserRouter>
     </div>
